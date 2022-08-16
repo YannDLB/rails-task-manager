@@ -1,0 +1,11 @@
+<h1>Add a task</h1>
+
+<%= form_for(@task) do |t| %>
+  <%= t.label :title %>
+  <%= t.text_field :title %>
+  <%= t.label :details %>
+  <%= t.text_field :details %>
+  <%= t.submit %>
+<% end %>
+
+<%= link_to "Back", index_path %>
